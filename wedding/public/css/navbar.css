@@ -1,0 +1,12 @@
+nav {
+    position: fixed;
+    height: 100px;
+}
+
+nav ul {
+    width: 85% !important;
+}
+
+nav a {
+    font-size: 18px;
+}
