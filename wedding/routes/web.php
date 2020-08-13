@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::any('/', 'HomeController@index');
+Route::any('/hotel-recommendations', 'HomeController@hotelRecommendations');
