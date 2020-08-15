@@ -1,3 +1,91 @@
-html, body {
+html,
+body {
+    background-color: #EFEFEF;
     font-family: 'Playfair Display', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-weight: 400 !important;
+}
+
+nav {
+    height: 100px;
+    letter-spacing: 2px;
+    background-color: white;
+}
+
+nav ul {
+    width: 85% !important;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #848484 !important;
+}
+
+.active {
+    color: #848484 !important;
+}
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.cover-image {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+}
+
+.cover-image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.img-text-overlay {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.img-text-overlay::after {
+    content: '';
+    display: block;
+    padding-bottom: 50%;
+}
+
+.divider {
+    margin-bottom: 30px;
+    width: 15rem;
+}
+
+.divider-bottom {
+    transform: rotate(180deg);
+    width: 15rem;
 }
