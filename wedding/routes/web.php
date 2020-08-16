@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::any('/', 'HomeController@index');
-Route::any('/hotel-recommendations', 'HomeController@hotelRecommendations');
+Route::any('/our-story', 'HomeController@ourStory');
+Route::any('/hotel-recommendations', 'HomeController@hotelRec');
+Route::any('/bridal-party', 'HomeController@bridalParty');
+Route::any('/photos', 'HomeController@photos');
+Route::any('/rsvp', 'HomeController@rsvp');

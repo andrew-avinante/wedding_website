@@ -13,6 +13,15 @@
 @section('main-content')
 <div id='app'>
     <h1 class='text-center title'>Hotel Recommendations</h1>
-    <hotel></hotel>
+    <hotel v-for='hotel in hotels'
+        :hotel-name='hotel.hotelName'
+        :phone-number='hotel.phoneNumber'
+        :address='hotel.address'
+        :rate='hotel.rate'
+        :distances='hotel.distances'
+        :map-link = 'hotel.mapLink'
+        :booking-link='hotel.bookingLink'
+        :img-src='hotel.imgSrc'></hotel>
 </div>
 @endsection
+
