@@ -2,6 +2,16 @@ html,
 body {
     background-color: #EFEFEF;
     font-family: 'Playfair Display', serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1 0 auto;
 }
 
 h1,
@@ -29,6 +39,10 @@ nav a {
     font-size: 18px;
 }
 
+input {
+    padding: 3px 10px;
+}
+
 .nav-item a {
     color: black;
 }
@@ -42,6 +56,7 @@ nav a {
 }
 
 .footer {
+    flex-shrink: 0;
     background-color: white;
     padding: 40px 0;
 }
@@ -88,4 +103,25 @@ nav a {
 .divider-bottom {
     transform: rotate(180deg);
     width: 15rem;
+}
+
+.btn-light {
+    border-color: black;
+    white-space: nowrap;
+}
+
+.title {
+    margin: 30px 0;
+}
+
+.row {
+    background-color: transparent;
+}
+
+.input-error {
+    border: solid red;
+}
+
+.navigation {
+    margin: 20px 0;
 }

@@ -33,4 +33,8 @@ class HomeController extends BaseController
     public function rsvp() {
         return view('rsvp', ['page' => 'rsvp']);
     }
+
+    public function hotelRecommendations() {
+        return view('hotel-recommendations');
+    }
 }

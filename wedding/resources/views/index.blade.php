@@ -21,7 +21,7 @@
                 <span>@{{ weddingLocation.city }}, @{{ weddingLocation.state }}</span>
             </h2>
             <h2 id='date' class='text-center'>
-                <span>@{{ getDaysLeft() }}</span>
+                <span>@{{ getDaysLeft }}</span>
                 <span>days to go! </span>
             </h2>
         </div>
