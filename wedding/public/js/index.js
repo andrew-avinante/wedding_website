@@ -38,7 +38,7 @@ let vm = new Vue({
             }
         ]
     },
-    methods: {
+    computed: {
         getDaysLeft: getDaysLeft
     }
 });
