@@ -1,5 +1,5 @@
 <nav class='navbar navbar-expand-lg sticky-top'>
-    <span class="navbar-brand d-lg-none">Andrew & Kimberly</span>
+    <span class="navbar-brand d-lg-none">Kimberly & Andrew</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>
