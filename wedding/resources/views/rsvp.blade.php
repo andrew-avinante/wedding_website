@@ -5,7 +5,7 @@
 @endsection
 
 @section('main-content')
-<div id='app' class='container'>
+<div class='container'>
     <h1 class='text-center title'>RSVP</h1>
     <div v-show='pageNumber === 1' id='rsvp-section-1'>
         <!-- Names -->

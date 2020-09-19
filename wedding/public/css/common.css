@@ -135,3 +135,15 @@ input {
 .navbar-brand {
     float: none;
 }
+
+@media only screen and (max-width: 992px) {
+    .cover-image {
+        width: auto;
+        height: 100vh;
+    }
+    .img-text-overlay::after {
+        content: '';
+        display: block;
+        padding-bottom: 80vh;
+    }
+}
