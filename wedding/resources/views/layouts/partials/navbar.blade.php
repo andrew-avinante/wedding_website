@@ -1,9 +1,9 @@
 <nav class='navbar navbar-expand-lg sticky-top'>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
     </button>
 
-    <div class='collapse navbar-collapse'>
+    <div class='collapse navbar-collapse' id="nav-content">
         <ul class="container navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" data-page='our-wedding' href='/'>OUR WEDDING</a>
