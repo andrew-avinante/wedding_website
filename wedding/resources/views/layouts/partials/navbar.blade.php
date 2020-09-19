@@ -1,4 +1,4 @@
-<nav class='navbar navbar-expand-lg sticky-top'>
+<nav class='navbar navbar-expand-lg'>
     <span class="navbar-brand d-lg-none">Andrew & Kimberly</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
