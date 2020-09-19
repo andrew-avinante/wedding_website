@@ -1,6 +1,7 @@
 <nav class='navbar navbar-expand-lg sticky-top'>
+    <span class="navbar-brand d-lg-none">Andrew & Kimberly</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
     </button>
 
     <div class='collapse navbar-collapse' id="nav-content">
@@ -12,7 +13,7 @@
                 <a class="nav-link" data-page='our-story' href='/our-story'>OUR STORY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-page='hotel-rec' href='/hotel-recommendations'>HOTEL RECOMMENDATIONS</a>
+                <a class="nav-link text-center" data-page='hotel-rec' href='/hotel-recommendations'>HOTEL RECOMMENDATIONS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-page='bridal-party' href='/bridal-party'>BRIDAL PARTY</a>

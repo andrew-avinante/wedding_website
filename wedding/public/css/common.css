@@ -124,3 +124,14 @@ input {
 .navigation {
     margin: 20px 0;
 }
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    float: none;
+}
