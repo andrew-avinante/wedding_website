@@ -8,7 +8,7 @@ let vm = new Vue({
     el: '#app',
     data: {
         pageTitle: 'Kimberly & Andrew',
-        weddingDate: moment(new Date('06/12/2021 00:00:00')), // get from db
+        weddingDate: moment(new Date('06/12/2021 12:00:00')), // get from db
         weddingLocation: {
             city: 'Greenville',
             state: 'SC'
