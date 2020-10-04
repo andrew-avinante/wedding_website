@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Menu;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -31,6 +32,7 @@ class HomeController extends BaseController
     }
 
     public function rsvp() {
+        return var_dump(Menu::GetMenu());
         return view('rsvp', ['page' => 'rsvp']);
     }
 
