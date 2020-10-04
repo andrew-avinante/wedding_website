@@ -37,7 +37,7 @@ CREATE TABLE `attendance` (
   CONSTRAINT `attendance_ibfk_1` FOREIGN KEY (`guestID`) REFERENCES `guests` (`guestid`),
   CONSTRAINT `attendance_ibfk_2` FOREIGN KEY (`eventID`) REFERENCES `events` (`eventid`),
   CONSTRAINT `attendance_ibfk_3` FOREIGN KEY (`menuID`) REFERENCES `menu` (`menuid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `events` (
   `eventID` varchar(36) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`eventID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,7 +85,7 @@ CREATE TABLE `guests` (
   `firstName` varchar(255) NOT NULL,
   `lastName` varchar(255) NOT NULL,
   PRIMARY KEY (`guestID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -111,7 +111,7 @@ CREATE TABLE `menu` (
   PRIMARY KEY (`menuID`),
   KEY `eventID` (`eventID`),
   CONSTRAINT `menu_ibfk_1` FOREIGN KEY (`eventID`) REFERENCES `events` (`eventid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
