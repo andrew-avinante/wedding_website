@@ -28,7 +28,7 @@ CREATE TABLE `attendance` (
   `attendanceID` varchar(36) NOT NULL,
   `guestID` varchar(36) NOT NULL,
   `eventID` varchar(36) NOT NULL,
-  `menuID` varchar(36) NOT NULL,
+  `menuID` varchar(36),
   `isGoing` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`attendanceID`),
   KEY `guestID` (`guestID`),

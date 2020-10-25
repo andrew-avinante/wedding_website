@@ -85,12 +85,12 @@ let submit = function() {
     });
 }
 
-let isAttendingEventWithFood = function(guest) {
+let getEventMenuByGuestAttendance = function(guest) {
     let vm = this;
     let menus = [];
 
     for (let i = 0; i < guest.attendance.length; i++) {
-        if (guest.attendance[i].isGoing && vm.events[i].menu.length > 0) {
+        if (guest.attendance[i].isGoing === 'true' && vm.events[i].menu.length > 0) {
             menus.push({
                 eventName: guest.attendance[i].eventName,
                 menu: vm.events[i].menu,
@@ -131,7 +131,7 @@ let _init = function(model) {
         },
         methods: {
             addGuest: addGuest,
-            getAttendance: isAttendingEventWithFood,
+            getEventMenuByGuestAttendance: getEventMenuByGuestAttendance,
             deleteGuest: deleteGuest,
             validateGuests: validateGuests,
             previousPage: previousPage,

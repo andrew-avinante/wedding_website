@@ -74,10 +74,10 @@
                         <h3>Food Option</h3>
                     </div>
                     <ul class="list-group list-group-flush">
-                         <li class="list-group-item" v-for='(guest, i) in guests'>
+                         <li class="list-group-item" v-for='(guest, i) in guests' v-if="getEventMenuByGuestAttendance(guest).length > 0">
                             <div class='form-group'>
                                 <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
-                                <p v-for='(event, j) in getAttendance(guest)'>
+                                <p v-for='(event, j) in getEventMenuByGuestAttendance(guest)'>
                                     Food options for @{{ event.eventName }}:
                                     <select v-model="guest.attendance[event.index].dish">
                                         <option v-for="food in event.menu" :value="food.menuID">@{{ food.dish }}</option>
