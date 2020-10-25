@@ -2,6 +2,9 @@
 
 @section('body-scripts')
 <script src='js/pages/rsvp.js'></script>
+<script>
+    _init({!! $model !!})
+</script>
 @endsection
 
 @section('main-content')
@@ -50,11 +53,11 @@
                             <div class='form-group'>
                                 <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
                                 <p v-for='(event, j) in events'>
-                                    Is attending @{{ event.eventName }}?
+                                    Is attending @{{ event.name }}?
                                     <label>Yes</label>
-                                    <input v-model='guest.attendance[j]' value='true' type='radio' @click='attendingFoodEvent(guest, j, true)'>
+                                    <input v-model='guest.attendance[j]["isGoing"]' value='true' type='radio'>
                                     <label>No</label>
-                                    <input v-model='guest.attendance[j]' value='false' type='radio' @click='attendingFoodEvent(guest, j, false)'>
+                                    <input v-model='guest.attendance[j]["isGoing"]' value='false' type='radio'>
                                 </p>
                             </div>
                         </li>
@@ -71,13 +74,13 @@
                         <h3>Food Option</h3>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" v-for='(guest, i) in guestsAttendingFood'>
+                         <li class="list-group-item" v-for='(guest, i) in guests'>
                             <div class='form-group'>
                                 <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
-                                <p v-for='(event, j) in guest.foodEventAttending'>
+                                <p v-for='(event, j) in getAttendance(guest)'>
                                     Food options for @{{ event.eventName }}:
-                                    <select>
-                                        <option v-for="food in event.menu">@{{ food }}</option>
+                                    <select v-model="guest.attendance[event.index].dish">
+                                        <option v-for="food in event.menu" :value="food.menuID">@{{ food.dish }}</option>
                                     </select>
                                 </p>
                             </div>
@@ -101,6 +104,7 @@
                                 <input v-model="email" class="w-100" type="email" placeholder="Email">
                             </div>
                         </div>
+                        <button @click="submit">Submit</button>
                     </div>
                 </div>
             </div>

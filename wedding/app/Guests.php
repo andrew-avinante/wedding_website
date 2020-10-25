@@ -22,4 +22,8 @@ class Guests extends Model
             ->where('guestID', $guestID)
             ->get();
     }
+
+    public static function AddGuest($guestID, $firstName, $lastName) {
+        return Guests::insert(['guestID' => $guestID,'firstName' => $firstName, 'lastName' => $lastName]);
+    }
 }

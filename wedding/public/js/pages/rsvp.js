@@ -27,14 +27,24 @@ let validateGuests = function() {
 let addGuest = function() {
     let vm = this;
 
+    let attendance = [];
+
+    for (let i = 0; i < vm.events.length; i++) {
+        attendance.push({
+            eventName: vm.events[i].name,
+            isGoing: false,
+            dish: null,
+            eventID: vm.events[i].eventID
+        });
+    }
+
     if (vm.validateGuests()) {
         vm.guests.push({
             firstName: "",
             lastName: "",
             showFirstNameError: false,
             showLastNameError: false,
-            attendance: new Array(vm.events.length),
-            foodEventAttending: []
+            attendance: attendance,
         });
     }
 }
@@ -57,67 +67,76 @@ let nextPage = function() {
     }
 }
 
-let attendingFoodEvent = function(guest, index, isGoing) {
+let submit = function() {
     let vm = this;
 
-    if (isGoing && !guest.foodEventAttending.includes(index) && vm.hasMenu[index]) {
-        guest.foodEventAttending.push(vm.events[index]);
-    } else if (!isGoing) {
-        let remove = guest.foodEventAttending.indexOf(index);
-        if (remove > -1) {
-            guest.foodEventAttending.splice(remove, 1);
+    $.ajax({
+        url: "/rsvp/submit",
+        method: 'POST',
+        data: {
+            guests: vm.guests
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(error, data) {
+            console.log(error, data);
         }
-    }
+    });
 }
 
-let guestsAttendingFood = function() {
+let isAttendingEventWithFood = function(guest) {
     let vm = this;
-    let guests = [];
+    let menus = [];
 
-    for (let i = 0; i < vm.guests.length; i++) {
-        if (vm.guests[i].foodEventAttending.length > 0) {
-            guests.push(vm.guests[i]);
+    for (let i = 0; i < guest.attendance.length; i++) {
+        if (guest.attendance[i].isGoing && vm.events[i].menu.length > 0) {
+            menus.push({
+                eventName: guest.attendance[i].eventName,
+                menu: vm.events[i].menu,
+                index: i
+            });
         }
     }
 
-    return guests;
+    return menus;
 }
 
-vm = new Vue({
-    el: '#app',
-    data: {
-        events: [{
-                eventName: 'Ceremony'
-            },
-            {
-                eventName: 'Reception',
-                menu: [
-                    'Steak',
-                    'Mac and Cheese'
-                ]
-            }
-        ],
-        guests: [{
-            foodEventAttending: [],
-            firstName: "",
-            lastName: "",
-            showFirstNameError: false,
-            showLastNameError: false,
-            attendance: new Array(2)
-        }],
-        hasMenu: [false, true],
-        pageNumber: 1,
-        email: ""
-    },
-    computed: {
-        guestsAttendingFood: guestsAttendingFood
-    },
-    methods: {
-        addGuest: addGuest,
-        deleteGuest: deleteGuest,
-        validateGuests: validateGuests,
-        previousPage: previousPage,
-        nextPage: nextPage,
-        attendingFoodEvent: attendingFoodEvent
+let _init = function(model) {
+    let attendance = [];
+
+    for (let i = 0; i < model.events.length; i++) {
+        attendance.push({
+            eventName: model.events[i].name,
+            isGoing: false,
+            dish: null,
+            eventID: model.events[i].eventID
+        });
     }
-});
+
+    vm = new Vue({
+        el: '#app',
+        data: {
+            events: model.events,
+            guests: [{
+                firstName: "",
+                lastName: "",
+                showFirstNameError: false,
+                showLastNameError: false,
+                attendance: attendance,
+                eventFood: []
+            }],
+            pageNumber: 1,
+            email: ""
+        },
+        methods: {
+            addGuest: addGuest,
+            getAttendance: isAttendingEventWithFood,
+            deleteGuest: deleteGuest,
+            validateGuests: validateGuests,
+            previousPage: previousPage,
+            nextPage: nextPage,
+            submit: submit
+        }
+    });
+}

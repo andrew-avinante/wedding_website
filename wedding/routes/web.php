@@ -19,3 +19,4 @@ Route::any('/hotel-recommendations', 'HomeController@hotelRec');
 Route::any('/bridal-party', 'HomeController@bridalParty');
 Route::any('/photos', 'HomeController@photos');
 Route::any('/rsvp', 'HomeController@rsvp');
+Route::post('/rsvp/submit', 'HomeController@rsvpSubmit');
