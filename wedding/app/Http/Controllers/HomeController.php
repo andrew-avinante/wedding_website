@@ -57,7 +57,7 @@ class HomeController extends BaseController
             $guestID = Str::uuid();
             Guests::AddGuest($guestID, $guest['firstName'], $guest['lastName']);
             foreach($guest['attendance'] as $event) {
-                Attendance::AddAttendance($guestID, $event['eventID'], $event['dish'], $event['isGoing'] ? 1 : 0);
+                Attendance::AddAttendance($guestID, $event['eventID'], $event['dish'], $event['isGoing'] == "true" ? 1 : 0);
             }
         }
         return response()->json(json_encode(Guests::GetGuests()));
