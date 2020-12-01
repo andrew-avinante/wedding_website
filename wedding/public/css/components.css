@@ -5,11 +5,10 @@
 
 .hotel-card img {
     margin: 10px;
-    width: 50%;
+    width: 100%;
 }
 
 .hotel-info {
-    display: inline-block;
     margin-top: 5px;
     padding-left: 10px;
     vertical-align: top;
