@@ -3,7 +3,6 @@ Vue.component('hotel', {
         hotelName: String,
         phoneNumber: String,
         address: Object,
-        rate: String,
         distances: Array,
         mapLink: String,
         bookingLink: String,
@@ -20,7 +19,6 @@ Vue.component('hotel', {
                         <h2>{{ hotelName }}</h2>
                         <div class='hotel-details'>
                             <ul>
-                                <li>Rate: {{ rate }} per night</li>
                                 <li v-for='dist in distances'>
                                     {{ dist.locationName }}: {{ dist.distance }}
                                 </li>

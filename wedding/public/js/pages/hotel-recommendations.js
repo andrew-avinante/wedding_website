@@ -10,7 +10,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
-                rate: '$150',
                 distances: [{
                         locationName: 'Reception',
                         distance: '1 min'
@@ -34,7 +33,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
-                rate: '$139',
                 distances: [{
                         locationName: 'Reception',
                         distance: '2 min'
@@ -57,7 +55,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
-                rate: '$139',
                 distances: [{
                         locationName: 'Reception',
                         distance: '4 min'
@@ -80,7 +77,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
-                rate: '$110',
                 distances: [{
                         locationName: 'Reception',
                         distance: '3 min'
@@ -103,7 +99,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
-                rate: '$119',
                 distances: [{
                         locationName: 'Reception',
                         distance: '2 min'
@@ -126,7 +121,6 @@ vm = new Vue({
                     state: 'SC',
                     zip: '29615'
                 },
-                rate: '$99',
                 distances: [{
                         locationName: 'Reception',
                         distance: '7 min'

@@ -1,16 +1,3 @@
-let test = [
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-    'img/photos/img1.jpg',
-];
-
 vm = new Vue({
     el: '#app',
     data: {
@@ -31,7 +18,7 @@ vm = new Vue({
                     picture: 'img/photos/bridal3.jfif'
                 },
                 {
-                    name: "Anna Tuch",
+                    name: "Anna Tuck",
                     role: "Bridesmaid",
                     picture: 'img/photos/bridal4.jfif'
                 },
