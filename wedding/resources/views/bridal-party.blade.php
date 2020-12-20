@@ -28,7 +28,7 @@
                     <div class="row justify-content-center justify-content-lg-start align-items-center align-items-lg-left" v-for="groomsman in bridalParty.groomsmen">
                         <div class="aligned">
                             <div class="crop-circle mx-auto d-block">
-                                <image class="profile-image" :src="groomsman.picture"></image>
+                                <image class="profile-image" :src="groomsman.picture" :style="groomsman.style"></image>
                             </div>
                             <h5>@{{ groomsman.name }} - @{{ groomsman.role }}</h5>
                         </div>

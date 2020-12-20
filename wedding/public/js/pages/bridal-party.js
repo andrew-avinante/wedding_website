@@ -36,17 +36,19 @@ vm = new Vue({
                 {
                     name: "Joseph Koons",
                     role: "Groomsman",
+                    style: "width: 150px !important; margin-left: -20px;",
                     picture: 'img/photos/bridal8.jfif'
                 },
                 {
                     name: "Erden Ucok",
                     role: "Groomsman",
+                    style: "margin-top: -20px";
                     picture: 'img/photos/bridal7.jfif'
                 },
                 {
                     name: "Carter Richards",
                     role: "Groomsman",
-                    picture: 'img/photos/img1.jpg'
+                    picture: 'img/photos/pridal9.jpg'
                 },
                 {
                     name: "Jake Koster",
