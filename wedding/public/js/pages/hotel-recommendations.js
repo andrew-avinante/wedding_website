@@ -21,7 +21,7 @@ vm = new Vue({
                 ],
                 mapLink: 'https://goo.gl/maps/TD7DpbZpanqaa91P7',
                 bookingLink: 'https://www.hyatt.com/en-US/hotel/south-carolina/hyatt-regency-greenville/gsprg?src=corp_lclb_gmb_seo_nam_gsprg',
-                imgSrc: '/img/hotel/hotel1.webp'
+                imgSrc: '/img/hotel/hotel1.jpg'
             },
             {
                 hotelName: 'SpringHill Suites by Marriott Greenville Downtown',
@@ -88,7 +88,7 @@ vm = new Vue({
                 ],
                 mapLink: 'https://goo.gl/maps/WKR9HankVv3xEzqq7',
                 bookingLink: 'https://www.ihg.com/holidayinnexpress/hotels/us/en/greenville/gspdt/hoteldetail?cm_mmc=CJ-_-5370367-_-100047223-_-Hotel+Indigo+Brand+Homepage-_-23c550a7337611eb80ec0bff0a240613&_PMID=99634986&glat=AFFI&setPMCookies=true&cjevent=23c550a7337611eb80ec0bff0a240613',
-                imgSrc: '/img/hotel/hotel4.webp'
+                imgSrc: '/img/hotel/hotel4.jpg'
             },
             {
                 hotelName: 'Home2 Suites by Hilton Greenville Downtown',
@@ -110,7 +110,7 @@ vm = new Vue({
                 ],
                 mapLink: 'https://goo.gl/maps/9uHTPMb6QSkgANKy9',
                 bookingLink: 'https://www.hilton.com/en/hotels/gspdoht-home2-suites-greenville-downtown/?SEO_id=GMB-HT-GSPDOHT',
-                imgSrc: '/img/hotel/hotel5.webp'
+                imgSrc: '/img/hotel/hotel5.jpg'
             },
             {
                 hotelName: 'Hilton Greenville',
@@ -132,7 +132,7 @@ vm = new Vue({
                 ],
                 mapLink: 'https://g.page/HiltonGreenville?share',
                 bookingLink: 'https://www.hilton.com/en/hotels/gspschf-hilton-greenville/?SEO_id=GMB-HI-GSPSCHF',
-                imgSrc: '/img/hotel/hotel6.webp'
+                imgSrc: '/img/hotel/hotel6.jpg'
             }
         ]
     }
