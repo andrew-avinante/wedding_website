@@ -42,7 +42,7 @@ vm = new Vue({
                 {
                     name: "Erden Ucok",
                     role: "Groomsman",
-                    style: "margin-top: -20px";
+                    style: "margin-top: -20px;",
                     picture: 'img/photos/bridal7.jfif'
                 },
                 {
