@@ -48,7 +48,7 @@ vm = new Vue({
                 {
                     name: "Carter Richards",
                     role: "Groomsman",
-                    picture: 'img/photos/pridal9.jpg'
+                    picture: 'img/photos/bridal9.jpg'
                 },
                 {
                     name: "Jake Koster",
