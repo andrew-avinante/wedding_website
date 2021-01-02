@@ -32,7 +32,7 @@ let pictures = [
     'img/photos/img31.jfif', //r
     'img/photos/img32.jfif', //r
     'img/photos/img33.jfif', //r
-    // 'img/photos/img34.jfif', //why did you hide this?
+    'img/photos/img34.jfif', //why did you hide this?
     'img/photos/img35.JPG', //highschool
     'img/photos/img36.JPG', //highschool
     'img/photos/img37.JPG', //highschool
@@ -46,11 +46,11 @@ let pictures = [
     'img/photos/img45.JPG', //r
 ];
 
-console.log(splitArrays(pictures, Math.floor(pictures.length / 3)));
+console.log(splitArrays(pictures, Math.ceil(pictures.length / 3)));
 
 vm = new Vue({
     el: '#app',
     data: {
-        pictures: splitArrays(pictures, Math.floor(pictures.length / 3))
+        pictures: splitArrays(pictures, Math.ceil(pictures.length / 3))
     }
 });
