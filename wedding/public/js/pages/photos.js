@@ -37,7 +37,7 @@ let pictures = [
     'img/photos/img36.JPG', //highschool
     'img/photos/img37.JPG', //highschool
     'img/photos/img38.JPG', //highschool
-    'img/photos/img39,JPEG', //r
+    'img/photos/img39.JPEG', //r
     'img/photos/img40.JPG', //r
     'img/photos/img41.JPG', //r
     'img/photos/img42.jpg', //r
