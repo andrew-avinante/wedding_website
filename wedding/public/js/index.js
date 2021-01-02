@@ -1,14 +1,15 @@
 let getDaysLeft = function() {
     let vm = this;
     var date = moment(new Date());
-    return vm.weddingDate.diff(date, 'days') + 1;
+    return vm.weddingCounter.diff(date, 'days') + 1;
 }
 
 let vm = new Vue({
     el: '#app',
     data: {
         pageTitle: 'Kimberly & Andrew',
-        weddingDate: moment(new Date('06/12/2021 00:00:00')), // get from db
+        weddingCounter: moment(new Date('06/12/2021 00:00:00')),
+        weddingDate: moment(new Date('06/12/2021 13:30:00')), // get from db
         weddingLocation: {
             city: 'Greenville',
             state: 'SC'
