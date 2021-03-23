@@ -27,15 +27,14 @@ let vm = new Vue({
             },
             {
                 eventName: 'Reception',
-                venueName: 'The Commerce Club',
+                venueName: 'Zen',
                 address: {
-                    addressLine1: '55 Beattie Place',
-                    addressLine2: 'Suite 1700',
+                    addressLine1: '924 S Main St',
                     city: 'Greenville',
                     state: 'SC',
                     zip: '29601'
                 },
-                mapLink: 'https://goo.gl/maps/gcmQYP8KnKkjj9oC7'
+                mapLink: 'https://g.page/zengreenville?share'
             }
         ]
     },
