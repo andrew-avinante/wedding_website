@@ -40,10 +40,10 @@ vm = new Vue({
                     picture: 'img/photos/bridal8.jfif'
                 },
                 {
-                    name: "Erden Ucok",
+                    name: "Anthony Layton",
                     role: "Groomsman",
                     style: "margin-top: -20px;",
-                    picture: 'img/photos/bridal7.jfif'
+                    picture: 'img/photos/bridl7.jfif'
                 },
                 {
                     name: "Carter Richards",
@@ -53,7 +53,7 @@ vm = new Vue({
                 {
                     name: "Jake Koster",
                     role: "Groomsman",
-                    picture: 'img/photos/img1.jpg'
+                    picture: 'img/photos/bridal10.jpeg'
                 }
             ]
         }
