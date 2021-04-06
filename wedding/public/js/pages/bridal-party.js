@@ -40,7 +40,7 @@ vm = new Vue({
                     picture: 'img/photos/bridal8.jfif'
                 },
                 {
-                    name: "Anthony Layton",
+                    name: "Anthony Leyton",
                     role: "Groomsman",
                     style: "margin-top: -20px;",
                     picture: 'img/photos/bridl7.jfif'
