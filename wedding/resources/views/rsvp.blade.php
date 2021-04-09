@@ -66,10 +66,25 @@
             </div>
         </div>
     </div>
+    <div v-show='pageNumber === 3' id='rsvp-section-3'>
+        <div class='row justify-content-center'>
+            <div class="col-md-7">
+                <div class='card'>
+                    <div class="card-header">
+                        <h3>Confirm RSVP</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Please verify that all information on this form is correct then click "Submit" below.</p>
+                        <button @click="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class='row justify-content-center navigation'>
         <div class="col-md-7">
-            <button v-show='pageNumber !== 1 && pageNumber !== 5' @click='previousPage' class="btn btn-light">Previous</button>
-            <button id="next" v-show='pageNumber !== 4 && pageNumber !== 5' @click='nextPage' class="btn btn-light float-right">Next</button>
+            <button v-show='pageNumber !== 1 && pageNumber !== 4' @click='previousPage' class="btn btn-light">Previous</button>
+            <button id="next" v-show='pageNumber !== 3 && pageNumber !== 4' @click='nextPage' class="btn btn-light float-right">Next</button>
         </div>
     </div>
 </div>
