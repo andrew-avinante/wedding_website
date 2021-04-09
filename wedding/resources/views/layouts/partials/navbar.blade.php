@@ -31,9 +31,9 @@
                     <a class="dropdown-item" href="https://www.target.com/gift-registry/giftgiver?registryId=c0faf7c10f674c3d820e3e2624cd4add&type=WEDDING" target="_blank">TARGET</a>
                 </div>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" data-page='rsvp' href='/rsvp'>RSVP</a>
-            </li> -->
+            </li>
         </ul>
     </div>
 </nav>
