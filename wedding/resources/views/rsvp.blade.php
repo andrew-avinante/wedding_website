@@ -66,50 +66,6 @@
             </div>
         </div>
     </div>
-    <div v-show='pageNumber === 3' id='rsvp-section-3'>
-        <div class='row justify-content-center'>
-            <div class="col-md-7">
-                <div class='card'>
-                    <div class="card-header">
-                        <h3>Food Option</h3>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                         <li class="list-group-item" v-for='(guest, i) in guests' v-if="getEventMenuByGuestAttendance(guest).length > 0">
-                            <div class='form-group'>
-                                <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
-                                <p v-for='(event, j) in getEventMenuByGuestAttendance(guest)'>
-                                    Food options for @{{ event.eventName }}:
-                                    <select v-model="guest.attendance[event.index].dish">
-                                        <option v-for="food in event.menu" :value="food.menuID">@{{ food.dish }}</option>
-                                    </select>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div v-show='pageNumber === 4' id='rsvp-section-4'>
-        <div class='row justify-content-center'>
-            <div class="col-md-7">
-                <div class='card'>
-                    <div class="card-header">
-                        <h3>Email RSVP (Optional)</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Type in your email in order to receive a copy of the RSVP data you have provided.</p>
-                        <div class='row'>
-                            <div class="col-xl-12 form-group">
-                                <input v-model="email" class="w-100" type="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <button @click="submit">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class='row justify-content-center navigation'>
         <div class="col-md-7">
             <button v-show='pageNumber !== 1 && pageNumber !== 5' @click='previousPage' class="btn btn-light">Previous</button>
