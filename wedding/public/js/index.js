@@ -9,7 +9,7 @@ let vm = new Vue({
     data: {
         pageTitle: 'Kimberly & Andrew',
         weddingCounter: moment(new Date('06/12/2021 00:00:00')),
-        weddingDate: moment(new Date('06/12/2021 13:30:00')), // get from db
+        weddingDate: moment(new Date('06/12/2021 13:00:00')), // get from db
         weddingLocation: {
             city: 'Greenville',
             state: 'SC'
@@ -34,6 +34,7 @@ let vm = new Vue({
                     state: 'SC',
                     zip: '29601'
                 },
+                time: "Saturday, June 12 2021 3:00 PM",
                 mapLink: 'https://g.page/zengreenville?share'
             }
         ]

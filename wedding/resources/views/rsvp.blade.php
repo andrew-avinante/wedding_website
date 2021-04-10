@@ -72,10 +72,36 @@
                 <div class='card'>
                     <div class="card-header">
                         <h3>Confirm RSVP</h3>
+                        <p style="margin: 0;">Please confirm the information below and then click submit.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" v-for='(guest, i) in guests'>
+                            <div class='form-group'>
+                                <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
+                                <p v-for='(event, j) in events'>
+                                    Is attending @{{ event.name }}:
+                                    <span v-if='guest.attendance[j]["isGoing"]'>Yes</span>
+                                    <span v-else>Yes</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <button @click="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div v-show='pageNumber === 4' id='rsvp-section-4'>
+        <div class='row justify-content-center'>
+            <div class="col-md-7">
+                <div class='card'>
+                    <div class="card-header">
+                        <h3>Success!</h3>
                     </div>
                     <div class="card-body">
-                        <p>Please verify that all information on this form is correct then click "Submit" below.</p>
-                        <button @click="submit">Submit</button>
+                        <p>Your response has been recorded!</p>
                     </div>
                 </div>
             </div>

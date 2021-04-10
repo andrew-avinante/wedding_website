@@ -34,6 +34,7 @@
         <div>
             <div class='event-info' v-for='venue in venueInfo'>
                 <h2>@{{ venue.eventName }}</h2>
+                <p>@{{ venue.time }}</p>
                 <p class='venue-name'>@{{ venue.venueName }}</p>
                 <a :href='venue.mapLink' target="_blank">
                     @{{ venue.address.addressLine1 }}, @{{ venue.address.addressLine2 ? `${venue.address.addressLine2}, ` : '' }} @{{ venue.address.city }}, @{{ venue.address.state }}, @{{ venue.address.zip }}

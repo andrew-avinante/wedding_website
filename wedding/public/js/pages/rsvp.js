@@ -69,6 +69,7 @@ let nextPage = function() {
 
 let submit = function() {
     let vm = this;
+    vm.nextPage();
 
     $.ajax({
         url: "/rsvp/submit",
