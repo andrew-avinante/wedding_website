@@ -32,7 +32,7 @@ let addGuest = function() {
     for (let i = 0; i < vm.events.length; i++) {
         attendance.push({
             eventName: vm.events[i].name,
-            isGoing: false,
+            isGoing: true,
             dish: null,
             eventID: vm.events[i].eventID
         });
