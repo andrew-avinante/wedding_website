@@ -80,7 +80,7 @@
                                 <p>@{{ guest.firstName }} @{{ guest.lastName }}</p>
                                 <p v-for='(event, j) in events'>
                                     Is attending @{{ event.name }}:
-                                    <span v-if='guest.attendance[j]["isGoing"]'>Yes</span>
+                                    <span v-if='guest.attendance[j]["isGoing"] !== "false"'>Yes</span>
                                     <span v-else>No</span>
                                 </p>
                             </div>

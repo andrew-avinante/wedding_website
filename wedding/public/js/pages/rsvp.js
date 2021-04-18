@@ -109,7 +109,7 @@ let _init = function(model) {
     for (let i = 0; i < model.events.length; i++) {
         attendance.push({
             eventName: model.events[i].name,
-            isGoing: false,
+            isGoing: true,
             dish: null,
             eventID: model.events[i].eventID
         });
