@@ -1,7 +1,7 @@
 let getDaysLeft = function() {
     let vm = this;
     var date = moment(new Date());
-    return date.diff(vm.weddingCounter, 'days') + 1;
+    return date.diff(vm.weddingCounter, 'days');
 }
 
 let vm = new Vue({
