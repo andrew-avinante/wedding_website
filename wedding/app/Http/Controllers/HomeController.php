@@ -36,6 +36,10 @@ class HomeController extends BaseController
         return view('photos', ['page' => 'photos']);
     }
 
+    public function video() {
+        return view('video', ['page' => 'video']);
+    }
+
     public function rsvp() {
         $events = Events::GetEvents();
 
