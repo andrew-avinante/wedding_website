@@ -10,7 +10,7 @@
 
 @section('main-content')
 <div class="container">
-    <h1 class='text-center title'>Photos</h1>
+    <h1 class='text-center title'>Wedding Video</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
