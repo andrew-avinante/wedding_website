@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+.docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Dependencies
+/vendor
+/node_modules
+
+# Build artifacts
+/public/hot
+/public/storage
+# Don't ignore public/js and public/css - they contain the actual source files for this project
+# /public/js
+# /public/css
+/public/mix-manifest.json
+
+# Storage
+/storage/*.key
+/storage/logs
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+
+# Cache
+/bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Testing
+/tests
+/phpunit.xml
+/.phpunit.result.cache
+
+# Documentation
+README.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Homestead/Vagrant
+Homestead.yaml
+Homestead.json
+.vagrant
+Vagrantfile
+
+# NPM
+npm-debug.log
+yarn-error.log
+
+# Misc
+*.log
+.phpunit.result.cache
